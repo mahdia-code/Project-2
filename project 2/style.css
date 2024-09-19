@@ -1,0 +1,89 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: #f0f0f0; 
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004466; /* Midnight Blue */
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold; /* Make problem titles bold */
+  }
+  
+  .container {
+    max-width: 800px; 
+    margin: 20px auto; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .problem-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="number"],
+  input[type="text"] {
+    padding: 10px;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(50% - 20px); 
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #004466; /* Midnight Blue for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  button:hover {
+    background-color: #002d42; /* Darker Midnight Blue on hover */
+  }
+  
+  p {
+    margin-top: 15px;
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media screen and (max-width: 600px) {
+    .container {
+      max-width: 90%; 
+      margin: 10px auto;
+    }
+  
+    .problem-container {
+      margin-bottom: 20px;
+    }
+  
+    input[type="number"],
+    input[type="text"] {
+      width: calc(100% - 20px); 
+    }
+  
+    button {
+      width: calc(100% - 20px);
+    }
+  }
